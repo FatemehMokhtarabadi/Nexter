@@ -1,0 +1,93 @@
+%headings {
+  font-family: $font-display;
+  font-weight: 400;
+  // text-transform: uppercase;
+}
+
+.heading-1 {
+  @extend %headings;
+  font-size: 4.5rem;
+  color: $color-grey-light-1;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1;
+
+  &__dark {
+    color: $color-grey-dark-1;
+  }
+
+  &__light {
+    color: $color-grey-light-1;
+  }
+}
+
+.heading-2 {
+  @extend %headings;
+  font-family: $font-display;
+
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -1px;
+  &__dark {
+    color: $color-grey-dark-1;
+  }
+
+  &__light {
+    color: $color-grey-light-1;
+  }
+}
+
+.heading-3 {
+  @extend %headings;
+
+  font-size: 1.6rem;
+  color: $color-primary;
+  font-weight: 400;
+}
+
+.heading-4 {
+  @extend %headings;
+
+  &__dark {
+    color: $color-grey-dark-1;
+  }
+
+  &__light {
+    color: $color-grey-light-1;
+  }
+}
+
+.btn {
+  background-color: $color-primary;
+  color: #fff;
+  border: none;
+  border-radius: none;
+  font-family: $font-display;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all 200ms;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+// Utilities
+
+.mrg-bottom-sm {
+  margin-bottom: 2rem;
+}
+
+.mrg-bottom-md {
+  margin-bottom: 3rem;
+}
+
+.mrg-bottom-lg {
+  margin-bottom: 5rem;
+}
+
+.mrg-bottom-hg {
+  margin-bottom: 8rem;
+}
